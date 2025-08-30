@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 8px 0 rgba(249, 245, 245, 0.2), 0 6px 20px 0 rgba(247, 246, 246, 0.19);
+}
+
+.navbar {
+    /* margin: 0; */
+    overflow: hidden;
+    background-color: #730a0a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 14%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .navbar a:hover {
+    color: #1c87c9;
+  }
+  
+
+h1{
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 6rem;
+}
+
+button{
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: #673de6;
+    color: white;
+}
+
+.container{
+  padding: 15px;
+  border: 3px solid red;
+  box-shadow: 0 4px 8px 0 rgba(95, 91, 91, 0.2), 0 6px 20px 0 rgba(68, 62, 62, 0.19);
+  background: transparent;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media(max-width:850px){
+    
+    .navbar a {
+      text-align: center;
+      display: inline-flex;
+      color: #eeeeee;
+      padding: 15px;
+      padding-left: 9%;
+      font-weight: bolder;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+  
+  @media(max-width:600px){
+  
+    .navbar a {
+      text-align: center;
+      display: inline-flex;
+      color: #eeeeee;
+      padding: 15px;
+      padding-left: 6%;
+      font-weight: bolder;
+      text-decoration: none;
+      font-size: 18px;
+    }
+  }
+@media (max-width:398px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        gap: 1rem;
+    }
+    button{
+        width: 6rem;
+        padding: 1rem;
+        cursor: pointer;
+        background: #673de6;
+        color: white;
+        align-items: center;
+    }
+    
+}
+    </style>
+</head>
+<body>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="course.html">Courses</a>
+        <a href="college.html">Colleges</a>
+        <a href="exam.html">Exam</a>
+       </div>
+
+
+
+    <div class="container">
+        <h1>Contact With Us </h1>
+        <form action="https://formspree.io/f/meqwwvnd"method="POST">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+
+            <textarea name="Message" placeholder="Message" required></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>EKS </title>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
+</head>
+<body >
+  <div  ></div>
+    <div  >
+      <header >
+        <div class="wrapper">
+          <div class="logo-container"></div>
+          <div class="logo" style="color: white;">EDUCATE KARNATAKA</div> 
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="exam.html" >Exam</a></li>
+              <li><a href="college.html">College</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>    
+       </div>
+       <div class="search-container">
+        <div class="search-bar">
+          <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Courses.." ></div>
+              <!-- <ul id="myUL" class="search">
+                <li><a href="puc.html"  >PUC</a></li>
+                <li><a href="iti.html"  >ITI</a></li>
+                <li><a href="para.html"  >PARAMEDICAL</a></li>
+                <li><a href="diploma.html"  >Diploma</a></li>
+                <li><a href="#">ba</a></li>
+                <li><a href="#">bsC</a></li><li><a href="index.html">nda</a></li>
+                <li><a href="degree.html">bcOM</a></li>
+                <li><a href="sh.html">be</a></li>
+                <li><a href="index.html">btECH</a></li>
+                <li><a href="#">short term courses</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">Cindy</a></li>
+              </ul> -->
+
+
+          <ul id="myUL" class="search">
+            <li><a href="puc.html">PUC</a></li>
+            <li><a href="degree.html">ITI</a></li>
+            <li><a href="para.html">PARAMEDICAL</a></li>
+            <li><a href="diploma.html">DIploma</a></li>
+            <li><a href="be.html">be</a></li>
+            <li><a href="short_term.html">short term courses</a></li>
+          </ul>
+
+
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+      }
+    </script>
+  </div>
+  </div>
+       <div class="text">
+          <h1>WELCOME TO EDUCATE KARNATAKA</h1>
+          <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
+              of learning. It plays a crucial role in personal development, social mobility, and economic growth. </p>
+              <h2>what are you completed now </h2>
+          <a href="after_sslc.html"  >sslc</a>
+          <a href="after_puc.html"  >puc</a>
+          <h4>Are you looking for job orientend Courses</h4>
+          <a href="short_term.html"  >short term courses</a>
+       </div>
+  </header> 
+  <footer>
+      <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
+      <a href="mailto:educatekarnataka@gmail.com">support</a></p>
+    </footer>
+    </div>
+    
+      <script>
+        const dropdownInput = document.getElementById("myInput");
+        const dropdownMenu = document.getElementById("myUL");
+      
+      dropdownInput.addEventListener("click", function() {
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+      </script>        
+</body>
+</html> 
