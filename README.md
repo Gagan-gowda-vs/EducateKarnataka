@@ -67,9 +67,9 @@ This project allowed me to gain hands-on experience with **HTML, CSS, PHP, MySQL
 ---
 
 ## 📸 Screenshots
-| Login Page | Sign-up Page | Course Page |
+| Register Page | UI Page | Course Page |
 |------------|--------------|-------------|
-| ![Login Page](images/login.png) | ![Signup Page](images/signup.png) | ![Course Page](images/course.png) |
+| ![Register Page](readme_imgs/register.jpg) | ![UI Page](readme_imgs/UI.jpg) | ![Course Page](readme_imgs/courses.jpg) |
 
 ---
 
@@ -102,3 +102,4 @@ The project helped me strengthen my **technical skills**, improve **team collabo
 📧 Email: gagangowdavs321@gmail.com  
 
 ---
+
